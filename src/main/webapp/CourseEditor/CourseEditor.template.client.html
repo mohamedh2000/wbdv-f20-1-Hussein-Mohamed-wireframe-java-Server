@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet"
+          href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+          crossorigin="anonymous"/>
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+          crossorigin="anonymous">
+    <link href="./courseeditor.style.client.css" rel="stylesheet"/>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <a class="navbar-brand" href="#"> <i class=" wbdv-course-editor wbdv-close x-btn fas fa-times"></i>
+            <strong class="wbdv-course-title"> CS 4550- WebDev </strong></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="lesson navbar-nav wbdv-lesson-tabs">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Build <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pages</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Theme</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Store</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Apps</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Settings</a>
+                </li>
+                <li class="nav-item">
+                    <button class="btn-plus-css wbdv-lesson-add-btn">
+                        <i class="btn fas fa-plus"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <ul class="wbdv-module-list list-group">
+                        <li class="list-group-item wbdv-module-item"> <strong class="wbdv-module-item-title"> Module 1 - jQuery</strong> <i class="btn wbdv-module-item-delete-btn fas fa-times float-right"></i></li>
+                        <li  class="list-group-item activewbdv-module-item active"> <strong class="wbdv-module-item-title"> Module 2 - React</strong> <i class="btn wbdv-module-item-delete-btn  fas fa-times float-right"></i></li>
+                        <li  class="list-group-item wbdv-module-item"> <strong class="wbdv-module-item-title"> Module 3 - Redux</strong> <i class="btn wbdv-module-item-delete-btn fas fa-times float-right"></i></li>
+                        <li  class="list-group-item wbdv-module-item"> <strong class="wbdv-module-item-title"> Module 4 - Native</strong> <i class="btn wbdv-module-item-delete-btn fas fa-times float-right"></i></li>
+                        <li  class="list-group-item wbdv-module-item"><strong class="wbdv-module-item-title"> Module 5 - Angular</strong> <i class="btn wbdv-module-item-delete-btn fas fa-times float-right"></i></li>
+                        <li  class="list-group-item wbdv-module-item"><strong class="wbdv-module-item-title"> Module 6 - Node</strong> <i class="btn wbdv-module-item-delete-btn fas fa-times float-right"></i></li>
+                        <li  class="list-group-item wbdv-module-item"><strong class="wbdv-module-item-title"> Module 7 - Mongo</strong> <i class="btn wbdv-module-item-delete-btn fas fa-times float-right"></i></li>
+                        <i class="btn wbdv-module-item-add-btn module-plus fas fa-plus float-right"></i>
+                    </ul>
+                </div>
+                    <div class="col-sm-8">
+                    <br />
+                    <ul class="nav nav-pills wbdv-topic-pill-list">
+                        <li class="nav-item wbdv-topic-pill">
+                            <a class="nav-link active" href="#"> Topic 1 </a>
+                        </li>
+                        <li class="nav-item wbdv-topic-pill">
+                            <a class="nav-link" href="#"> Topic 2 </a>
+                        </li>
+                        <li class="nav-item wbdv-topic-pill">
+                            <a class="nav-link" href="#"> Topic 3 </a>
+                        </li>
+                        <li class="nav-item wbdv-topic-pill">
+                            <a class="nav-link" href="#"> Topic 4 </a>
+                        </li>
+                        <li class="nav-item wbdv-topic-pill">
+                            <a class="nav-link" href="#"> <i class="fas fa-plus wbdv-topic-add-btn"></i> </a>
+                        </li>
+                    </ul>
+                    <br/>
+                        <div class="row float-right">
+                            <button id="save_btn" class="btn btn-success">Save</button>
+                            <h5>Preview <i id="toggle-btn" class="fas fa-toggle-off"></i></h5>
+                        </div>
+                        <br />
+                        <div id="middle-class"class="container">
+                                <div class="row float-right">
+                                    <h3 class="heading">Heading Widget</h3>
+                                    <a class="btn-arr btn btn-warning"><i class="fas fa-arrow-up"></i></a>
+                                    <a class="btn-arr btn btn-warning"><i class="fas fa-arrow-down"></i></a>
+                                    <div class=" btn-arr form-group row">
+                                        <div class="col-sm-19">
+                                            <select class="wbdv-field wbdv-role form-control">
+                                                <option value="Heading">Heading</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <a class="btn-arr btn btn-danger wbdv-close">
+                                        <i class="fas fa-times"></i></a>
+                            </div>
+                            <div>
+                                <input class="form-control wbdv-course-title" placeholder="Heading Text"/>
+                                <br/>
+                                <div class="form-group">
+                                    <div>
+                                        <select class=" wbdv-lesson-tabs form-control">
+                                            <option value="Heading">Heading</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <input class="form-control" placeholder="Widget name"/>
+                                <br />
+                                <h5>Preview</h5>
+                                <br/>
+                                <h1>Heading text</h1>
+                            </div>
+                        </div>
+                        <button class="plus-btn btn btn-danger wbdv-lesson-add-btn"> <i class="fas fa-plus"></i> </button>
+                    </div>
+
+            </div>
+            </div>
+
+</body>
+</html>

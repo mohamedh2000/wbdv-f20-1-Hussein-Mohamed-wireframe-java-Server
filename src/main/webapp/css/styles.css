@@ -1,0 +1,54 @@
+#header {
+    position: fixed;
+    top: 0px;
+    left: 10px;
+    right: 0px;
+}
+
+#the_table {
+    margin-top: 100
+}
+
+#caret {
+    top: -20
+}
+
+#add_course {
+    position:fixed;
+    background:none;
+    border:none;
+}
+
+#add_course2 {
+    position: fixed;
+    background:none;
+    border:none;
+    margin-left:1000;
+}
+
+#menu_button {
+    background:none;
+    border:none;
+}
+
+.btn {
+    background:none;
+    border:none;
+}
+
+#last-modified {
+    display:inline-block
+}
+
+#dashboard-icon {
+    margin-left: 20px
+}
+
+#alphabet-icon {
+    margin-left: 20px
+}
+
+#add_Courses {
+    width: 50px;
+    height: 50px;
+}

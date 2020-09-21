@@ -1,0 +1,147 @@
+<link rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      crossorigin="anonymous">
+<link rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"/>
+<link href="./css/styles.css" rel="stylesheet"/>
+<div class="container">
+    <h1 id="header">
+        <button id="menu_button" class="wbdv-field wbdv-hamburger"> <i class="fas fa-bars"></i> </button>
+        <label for="new_course_id" class="wbdv-label wbdv-course-manager"> Course Manager </label>
+        <input id="new_course_id" class="wbdv-field wbdv-new-course" type="text" placeholder="New Course Title"/>
+        <button id="add_course" class="wbdv-button wbdv-add-course"> <i class="fas fa-plus"> </i> </button>
+    </h1>
+    <table id="the_table" class="table">
+        <thead>
+            <tr class="form-group row">
+                <td>
+                    <strong class="wbdv-header wbdv-title">
+                        Title
+                    </strong>
+                </td>
+                <td id="owned-by">
+                    <strong class="wbdv-header wbdv-owner"> Owned By </strong>
+                    <i id="caret" class="fas fa-sort-down"></i>
+                </td>
+                <td id="last-modified">
+                    <strong class="wbdv-header wbdv-last-modified">Last Modified By Me</strong>
+                    <button class="btn wbdv-button wbdv-grid-layout ">
+                        <i id="dashboard-icon" class="fas fa-grip-horizontal"></i>
+                    </button>
+                    <button class="btn ">
+                    <h class="wbdv-header wbdv-sort">
+                        <i id="alphabet-icon" class="fas fa-sort-alpha-up"></i>
+                    </h>
+
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+                <tr class="wbdv-row wbdv-course form-group row">
+
+                    <td class="wbdv-row wbdv-title">
+                        <a class="btn" href="./CourseEditor/CourseEditor.template.client.html">
+                            <i class="wbdv-row wbdv-icon fas fa-file-word"></i>
+                            CS5500 Software Engineering Graduate
+                        </a>
+                    </td>
+                    <td class="wbdv-row wbdv-owner">
+                        me
+                    </td>
+                    <td class="wbdv-row wbdv-modified-date">
+                        4:42pm
+                    </td>
+                    <td>
+                        <button class="btn wbdv-row wbdv-button wbdv-delete">
+                            <i class="fas fa-trash"></i> </button>
+                    </td>
+
+                </tr>
+
+            <tr class="wbdv-row wbdv-course form-group row">
+                <td class="wbdv-row wbdv-title">
+                    <a class="btn" href="./CourseEditor/CourseEditor.template.client.html">
+                        <i class="wbdv-row wbdv-icon fas fa-file-word"></i>
+                        CS4550 Software Engineering Undergraduate
+                    </a>
+                </td>
+                <td class="wbdv-row wbdv-owner">
+                    me
+                </td>
+                <td class="wbdv-row wbdv-modified-date">
+                    4:42pm
+                </td>
+                <td>
+                    <button class="btn wbdv-row wbdv-button wbdv-delete">
+                        <i class="fas fa-trash"></i> </button>
+                </td>
+                <!-- <i class="fas fa-bars"></i> -->
+            </tr>
+            <tr class="wbdv-row wbdv-course form-group row">
+                <td class="wbdv-row wbdv-title">
+                    <a class="btn" href="./CourseEditor/CourseEditor.template.client.html">
+                        <i class="wbdv-row wbdv-icon fas fa-file-word"></i>
+                        CS4500 WebDev Undergraduate
+                    </a>
+                </td>
+                <td class="wbdv-row wbdv-owner">
+                    me
+                </td>
+                <td class="wbdv-row wbdv-modified-date">
+                    4:42pm
+                </td>
+                <td>
+                    <button class="btn wbdv-row wbdv-button wbdv-delete">
+                        <i class="fas fa-trash"></i> </button>
+                </td>
+                <!-- <i class="fas fa-bars"></i> -->
+            </tr>
+            <tr class="wbdv-row wbdv-course form-group row">
+                <td class="wbdv-row wbdv-title">
+                    <a class="btn" href="./CourseEditor/CourseEditor.template.client.html">
+                        <i class="wbdv-row wbdv-icon fas fa-file-word"></i>
+                        CS5610 WebDev Graduate
+                    </a>
+                </td>
+                <td class="wbdv-row wbdv-owner">
+                    me
+                </td>
+                <td class="wbdv-row wbdv-modified-date">
+                    4:42pm
+                </td>
+                <td>
+                    <button class="btn wbdv-row wbdv-button wbdv-delete">
+                        <i class="fas fa-trash"></i> </button>
+                </td>
+                <!-- <i class="fas fa-bars"></i> -->
+            </tr>
+            <tr class="wbdv-row wbdv-course form-group row">
+                <td class="wbdv-row wbdv-title">
+                    <a class="btn" href="./CourseEditor/CourseEditor.template.client.html">
+                        <i class="wbdv-row wbdv-icon fas fa-file-word"></i>
+                        CS5200 Intro to Databases
+                    </a>
+                </td>
+                <td class="wbdv-row wbdv-owner">
+                    me
+                </td>
+                <td class="wbdv-row wbdv-modified-date">
+                    4:42pm
+                </td>
+                <td>
+                    <button class="btn wbdv-row wbdv-button wbdv-delete">
+                        <i class="fas fa-trash"></i> </button>
+                </td>
+                <!-- <i class="fas fa-bars"></i> -->
+            </tr>
+        </tbody>
+    </table>
+    <h1 id="add_div">
+        <button id="add_course2"
+                class="wbdv-button wbdv-add-course"> <i class="fas fa-plus"> </i> </button>
+    </h1>
+
+</div>

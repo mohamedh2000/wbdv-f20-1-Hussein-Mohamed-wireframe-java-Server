@@ -1,0 +1,10 @@
+
+#alert-message {
+    display:none
+}
+
+#exit {
+    position: fixed
+    float: right
+    right: 0
+}

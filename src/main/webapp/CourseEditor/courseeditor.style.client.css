@@ -1,0 +1,54 @@
+#middle-class {
+    margin-top:50px;
+    border-style: solid;
+}
+
+#save_btn {
+    margin-right: 20px;
+}
+
+#toggle-btn {
+    position:relative;
+    margin-top: 5px;
+}
+
+.btn-arr {
+    margin: 10px;
+}
+
+.module-plus {
+    margin-top: 25px;
+    margin-left: 325px;
+}
+
+.btn-plus-css {
+    border: none;
+    background: none;
+    margin-top:2px;
+}
+
+.lesson {
+    margin-top: 3px;
+}
+
+.add-btn-nav {
+    margin-right: 50px;
+}
+
+.plus-btn {
+    position: relative;
+    margin-left: 700px;
+}
+
+.plus-btn {
+    margin-top: 12px;
+}
+
+.x-btn {
+    margin-left: 10px;
+}
+
+.heading {
+    position: relative;
+    margin-right:200px;
+}

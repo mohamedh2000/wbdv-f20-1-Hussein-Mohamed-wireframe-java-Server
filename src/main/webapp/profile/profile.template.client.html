@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+          integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+          crossorigin="anonymous" />
+    <link  href="./profile.style.client.css" rel="stylesheet"/>
+    <link rel="stylesheet"
+          href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+          crossorigin="anonymous"/>
+    <title>Title</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Profile</h1>
+        <div class="wbdv-message alertFld">
+            <div id="alert-message" class="alert alert-success alert-dissmissable">
+                Profile Successfully Saved!
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="usernameFld" class="col-sm-2 col-form-label">Username: </label>
+            <div class="col-sm-19">
+                <input type="text" class="wbdv-field wbdv-username form-control"
+                       id="usernameFld" placeholder="Username"/>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="phoneFld" class="col-sm-2 col-form-label">Phone: </label>
+            <div class="col-sm-19">
+                <input id="phoneFld" class="wbdv-field wbdv-phone form-control"
+                       type="tel" placeholder="Telephone"/>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="emailFld" class="col-sm-2 col-form-label">Email:  </label>
+            <div class="col-sm-19">
+                <input id="emailFld" class="wbdv-field wbdv-email form-control"
+                       type="email" placeholder="Email"/>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="dobFld" class="col-sm-2 col-form-label">Role: </label>
+            <div class="col-sm-19">
+                <select class="wbdv-field wbdv-role form-control">
+                    <option value="Faculty">Faculty</option>
+                    <option value="Student">Student</option>
+                    <option value="Admin">Admin</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="dobFld" class="col-sm-2 col-form-label">Date of Birth: </label>
+            <div class="col-sm-19">
+                <input id="dobFld" class="wbdv-field wbdv-dob form-control" type="date"/>
+            </div>
+        </div>
+
+
+        <div class="form-group row">
+            <div class="col-sm-19">
+                <button id="updateBtn" class="wbdv-button wbdv-update form-control btn btn-success"
+                        onclick="get_alert()">Update</button>
+            </div>
+            <script>
+                function get_alert() {
+                        document.getElementById("alert-message").style.display = "block";
+                }
+            </script>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-sm-19">
+                <a href="../index.html">
+                    <button id="logoutBtn" href="../index.html"
+                            class="wbdv-button wbdv-logout form-control btn btn-danger">
+                        Logout</button> </a>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
