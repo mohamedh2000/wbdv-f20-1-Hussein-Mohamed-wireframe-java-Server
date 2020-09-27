@@ -9,7 +9,7 @@
               href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
         <link href="user-admin.style.client.css" rel="stylesheet" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <!-- <script src="user-admin.service.client.js"></script> -->
+        <script src="../services/user.service.client.js"></script>
         <script src="user-admin.controller.client.js"></script>
     </head>
     <body>
@@ -46,7 +46,7 @@
                             </span></td>
                         </tr>
                     </thead>
-                    <tbody class="wbdv-tbody">
+                    <tbody class="wbdv-tbody" onload="main()">
                         <tr class="wbdv-template wbdv-user wbdv-hidden">
                             <td class="wbdv-username">ada</td>
                             <td>&nbsp;</td>
