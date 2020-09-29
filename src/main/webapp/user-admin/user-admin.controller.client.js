@@ -25,6 +25,7 @@ function renderUsers (users) {
     for(let i = 0; i < users.length; i++) {
          const user = users[i];
          const username = user.username;
+         const password = user.password;
          const fName = user.first;
          const lName = user.last;
          const role = user.role;
@@ -51,7 +52,6 @@ function init() {
     findAllUsers();
     renderUsers(users);
 }
-
     var $usernameFld, $passwordFld;
     var $removeBtn, $editBtn, $createBtn;
     var $firstNameFld, $lastNameFld, $roleFld;
@@ -68,10 +68,14 @@ function init() {
         const username = $("#usernameFld").val();
         const first = $("#firstNameFld").val();
         const last = $("#lastNameFld").val();
+        const password = $("#passwordFld").val();
+        const role = $("#roleFld").val();
         const newUser = {
             username: username,
+            password: password,
             first: first,
-            last: last
+            last: last,
+            role: role
         }
         userService.createUser(newUser).then(actualInsertedUser => {
             users.push(actualInsertedUser);
@@ -98,12 +102,15 @@ function init() {
         user = {        _id:id,
                         username:
                            $(".wbdv-form").find("#usernameFld").val(),
+                        password:
+                            $(".wbdv-form").find("#passwordFld").val(),
                         first:
                            $(".wbdv-form").find("#firstNameFld").val(),
                         last:
-                           $(".wbdv-form").find("#lastNameFld").val()
+                           $(".wbdv-form").find("#lastNameFld").val(),
+                        role:
+                           $(".wbdv-form").find("#roleFld").val()
                        };
-
         userService.updateUser(id, user).then(data => {
             renderUser(user);
         });
@@ -114,11 +121,15 @@ function init() {
         userService.findUserById(users[id]._id).then((_user) => {
             user = _user;
             username = user.username;
+            password = user.password;
             fName = user.first;
             lName = user.last;
+            role = user.role;
             $(".wbdv-form").find("#usernameFld").val(username);
+            $(".wbdv-form").find("#passwordFld").val(password);
             $(".wbdv-form").find("#firstNameFld").val(fName);
             $(".wbdv-form").find("#lastNameFld").val(lName);
+            $(".wbdv-form").find("#roleFld").val(role);
             $(".wbdv-update").click(() => updateUser(users[id]._id));
         });
 
@@ -132,7 +143,9 @@ console.log(user);
         if ( users[i]._id == id) {
             users[i].first = user.first;
             users[i].last = user.last;
+            users[i].password = user.password;
             users[i].username = user.username;
+            users[i].role = user.role;
             renderUsers(users);
         }
     }
